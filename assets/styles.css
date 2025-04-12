@@ -14,7 +14,7 @@ body{
 }
 #container{
   position: relative;
-  height: 80vh;
+  height: 65vh;
   width: 95%;
   background-color: #3c3c3c;
   border-top: solid 2px #7c7c7c;
@@ -51,26 +51,19 @@ body{
   text-overflow: ellipsis;
   border-bottom: solid #666666 1.5px;
 }
-.buttons{
-  margin-top: 30px;
-  height: 80%;
-  width: 100%;
-  display: flex;
-}
 .buttons-number{
-  display: flex;
-  flex-wrap: wrap;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 85px);
+  gap: 10px;
   height: 100%;
   width: 100%;
-  gap: 3px;
-  align-items: center;
-  justify-content: center;
 }
 .numbers{
   background: #2b2b2b;
   color: #fff;
-  height: 80px;
-  width: 80px;
+  height: 60px;
+  width: 60px;
   font-size: 40px;
   border: solid 1.5px black;
   border-radius: 10px;
@@ -87,8 +80,8 @@ body{
 .operations{
   background: #5a5959;
   color: #fff;
-  height: 80px;
-  width: 80px;
+  height: 60px;
+  width: 60px;
   font-size: 40px;
   border: solid 1.5px black;
   border-top: solid 2px #949494;
@@ -105,8 +98,8 @@ body{
 .functions{
   background: #5a5959;
   color: #fff;
-  height: 80px;
-  width: 80px;
+  height: 60px;
+  width: 60px;
   font-size: 40px;
   border: solid 1.5px black;
   border-radius: 10px;
@@ -124,10 +117,11 @@ body{
   background-color: #d78809;
 }
 #result{
-  width: 160px;
+  width: 120px;
+  margin-left: 127px;
 }
 #clear{
-  width: 160px;
+  width: 120px;
   background-color: #04838d;
-  margin-right: 15px;
+  margin-right: 12px;
 }
