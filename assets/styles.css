@@ -62,7 +62,7 @@ body{
   flex-wrap: wrap;
   height: 100%;
   width: 100%;
-  gap: 5px;
+  gap: 3px;
   align-items: center;
   justify-content: flex-end;
 }
