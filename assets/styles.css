@@ -10,11 +10,11 @@ body{
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #c4bfb7;
+  background-color: #04838d;
 }
 #container{
   position: relative;
-  height: 80vh;
+  height: 65vh;
   width: 95%;
   background-color: #3c3c3c;
   border-top: solid 2px #7c7c7c;
@@ -51,26 +51,19 @@ body{
   text-overflow: ellipsis;
   border-bottom: solid #666666 1.5px;
 }
-.buttons{
-  margin-top: 30px;
-  height: 80%;
-  width: 100%;
-  display: flex;
-}
 .buttons-number{
-  display: flex;
-  flex-wrap: wrap;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 85px);
+  gap: 10px;
   height: 100%;
   width: 100%;
-  gap: 8px;
-  align-items: center;
-  justify-content: flex-end;
 }
 .numbers{
   background: #2b2b2b;
   color: #fff;
-  height: 80px;
-  width: 80px;
+  height: 60px;
+  width: 60px;
   font-size: 40px;
   border: solid 1.5px black;
   border-radius: 10px;
@@ -87,8 +80,8 @@ body{
 .operations{
   background: #5a5959;
   color: #fff;
-  height: 80px;
-  width: 80px;
+  height: 60px;
+  width: 60px;
   font-size: 40px;
   border: solid 1.5px black;
   border-top: solid 2px #949494;
@@ -105,8 +98,8 @@ body{
 .functions{
   background: #5a5959;
   color: #fff;
-  height: 80px;
-  width: 80px;
+  height: 60px;
+  width: 60px;
   font-size: 40px;
   border: solid 1.5px black;
   border-radius: 10px;
@@ -122,12 +115,34 @@ body{
 }
 #addition{
   background-color: #d78809;
+  border-top: solid 1px #f09e19;
 }
 #result{
-  width: 160px;
+  width: 120px;
+  margin-left: 127px;
 }
 #clear{
-  width: 160px;
+  width: 120px;
   background-color: #04838d;
-  margin-right: 15px;
+  border-top:solid 2px #039da9;
+  margin-right: 12px;
+}
+#float{
+  background: #2b2b2b;
+  color: #fff;
+  height: 60px;
+  width: 60px;
+  font-size: 40px;
+  border: solid 1.5px black;
+  border-radius: 10px;
+  box-shadow:
+    0 1px 0 #000,   /* sombra embaixo */
+    0 -2px 0 #000,  /* sombra em cima */
+    1px 0 0 #000,   /* sombra à direita */
+   -1px 0 0 #000;   /* sombra à esquerda */
+  border-top:solid 2px #717171;
+}
+
+#float:active{
+  transform: scale(0.95);
 }
